@@ -1,0 +1,106 @@
+h1 {
+  font-size: 28px;
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2em;
+}
+
+.table {
+  max-width: 600px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #f2f9ff;
+}
+
+.top {
+  position: relative;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.topImg {
+  width: 100%;
+  height: 100px;
+  object-fit: none;
+  object-position: 30% 50%;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.formArea {
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+}
+
+.form {
+  display: inline-block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: darkslategrey;
+  width: 460px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+}
+
+.send {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: darkslategrey;
+  border: none;
+  width: 460px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.send:hover {
+  box-shadow: 0px 2px 4px black;
+  background-color: white;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.send:active,
+.send:focus {
+  background-color: darkslategray;
+  color: white;
+  transform: translateY(1px);
+}
+
+#output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
